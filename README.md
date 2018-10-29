@@ -1,4 +1,4 @@
-# Introduction to JUnit 5 with Maven - CI Example
+# Introduction to JUnit 5 with Maven
 
 All source code examples in the repository are for my [Online Course - Testing Spring Beginner to Guru](https://springframework.guru)
 
