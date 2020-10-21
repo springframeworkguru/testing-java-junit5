@@ -9,7 +9,7 @@ class PersonTest {
     @Test
     void groupedAssertions() {
         //given
-        Person person = new Person(1l, "Joe", "Buck");
+        Person person = new Person(1L, "Joe", "Buck");
 
         //then
         assertAll("Test Props Set",
@@ -20,11 +20,11 @@ class PersonTest {
     @Test
     void groupedAssertionMsgs() {
         //given
-        Person person = new Person(1l, "Joe", "Buck");
+        Person person = new Person(1L, "Joe", "Buck");
 
         //then
-        assertAll("Test Props Set",
-                () -> assertEquals(person.getFirstName(), "Joe", "First Name Failed"),
-                () -> assertEquals(person.getLastName(), "Buck", "Last Name Failed"));
+        assertAll("Test Properties Set",
+                () -> assertEquals("Joe", person.getFirstName(), "First Name Failed"),
+                () -> assertEquals( "Buck", person.getLastName(),"Last Name Failed"));
     }
 }
