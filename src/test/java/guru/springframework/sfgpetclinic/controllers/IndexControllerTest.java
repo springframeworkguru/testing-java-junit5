@@ -1,8 +1,11 @@
 package guru.springframework.sfgpetclinic.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -26,8 +29,26 @@ class IndexControllerTest {
     @Test
     @DisplayName("Test Exception")
     void oopsHandler() {
-            assertThrows(ValueNotFoundException.class, () -> {
-                indexController.oopsHandler();
-            });
-        }
+        assertThrows(ValueNotFoundException.class, () -> { 
+            indexController.oopsHandler();
+        });
+    }
+
+    @Test
+    @Disabled("Demo of timeout")
+    void testTimeOut() {
+        assertTimeout(Duration.ofMillis(100), () -> {
+            Thread.sleep(5000);
+            System.out.println("I got here");
+        });
+    }
+
+    @Test
+    @Disabled("Demo of timeout")
+    void testTimeOutPrempt() {
+        assertTimeoutPreemptively(Duration.ofMillis(100), () -> {
+            Thread.sleep(5000);
+            System.out.println("I got here prempt");
+        });
+    }
 }
