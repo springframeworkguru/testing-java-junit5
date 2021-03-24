@@ -15,3 +15,8 @@ For questions and help:
 * Or post in the Slack Community exclusive to the course.
 
 GitHub Issues will not be addressed.
+
+
+## 
+- Very Simple beforeClass/each/test/after/afterall guru.springframework.sfgpetclinig.controllers.IndexControllerTest
+- Group Assertions guru.springframework.sfgpetclinig.controllers.Person
