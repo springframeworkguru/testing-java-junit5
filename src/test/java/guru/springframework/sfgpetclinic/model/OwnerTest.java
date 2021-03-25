@@ -1,12 +1,15 @@
 package guru.springframework.sfgpetclinic.model;
 
 
+import guru.springframework.sfgpetclinic.ModelTests;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class OwnerTest {
+//@Tag("Models") <- now gets the tag from interface
+public class OwnerTest implements ModelTests {
 
     @Test
     public void dependentAssertions() {

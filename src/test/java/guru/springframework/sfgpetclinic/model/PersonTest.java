@@ -1,10 +1,13 @@
 package guru.springframework.sfgpetclinic.model;
 
+import guru.springframework.sfgpetclinic.ModelTests;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PersonTest {
+//@Tag("Models") <- now gets the tag from interface
+class PersonTest implements ModelTests {
 
     @Test
     public void groupedAssertions(){

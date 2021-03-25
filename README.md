@@ -20,3 +20,11 @@ GitHub Issues will not be addressed.
 ## 
 - Very Simple beforeClass/each/test/after/afterall guru.springframework.sfgpetclinig.controllers.IndexControllerTest
 - Group Assertions guru.springframework.sfgpetclinig.controllers.Person
+- Nested Test Classes: guru.springframework.sfgpetclinic.services.map.OwnerMapServiceTest
+
+## Tag annotation, to make groups of tests
+- Annotate a Class or Method with @Tag. 
+  - In IntelliJ, go to Run -> `Edit Configuration` -> Change `Class` to `Tag` and enter the Tag name. In the run dropdown (top-right) you can select different test groups
+  - In Maven
+  - In Gradle
+    
