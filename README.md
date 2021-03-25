@@ -21,6 +21,9 @@ GitHub Issues will not be addressed.
 - Very Simple beforeClass/each/test/after/afterall guru.springframework.sfgpetclinig.controllers.IndexControllerTest
 - Group Assertions guru.springframework.sfgpetclinig.controllers.Person
 - Nested Test Classes: guru.springframework.sfgpetclinic.services.map.OwnerMapServiceTest
+- @RepeatedTest(x) : PersonRepeatedTest:...
+- ParameterizedTests : OwnerTest  
+  - quite useful
 
 ## Tag annotation, to make groups of tests
 - Annotate a Class or Method with @Tag. 
