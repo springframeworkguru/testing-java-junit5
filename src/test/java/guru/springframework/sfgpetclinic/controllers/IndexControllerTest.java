@@ -22,6 +22,8 @@ class IndexControllerTest {
 
     @Test
     void oupsHandler() {
-        assertTrue("notimplemented".equals(indexController.oupsHandler()));
+        assertThrows(ValueNotFoundException.class, () -> {
+            indexController.oupsHandler();
+        });
     }
 }
