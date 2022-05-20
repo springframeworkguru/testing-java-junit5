@@ -1,10 +1,7 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
 import guru.springframework.sfgpetclinic.model.Owner;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 class OwnerSDJpaServiceTest {
 
@@ -22,26 +19,32 @@ class OwnerSDJpaServiceTest {
     }
 
     @Test
+    @DisplayName("Should return all by last name")
     void findAllByLastNameLike() {
     }
 
     @Test
+    @DisplayName("Should return all")
     void findAll() {
     }
 
     @Test
+    @DisplayName("Should return one object by id")
     void findById() {
     }
 
     @Test
+    @DisplayName("Should save an object")
     void save() {
     }
 
     @Test
+    @DisplayName("Should delete an object")
     void delete() {
     }
 
     @Test
+    @DisplayName("Should delete an object by id")
     void deleteById() {
     }
 }
